@@ -14,7 +14,7 @@ public class GitSteps {
         return this;
     }
 
-    @Step("Ищем репозиторий ${name}")
+    @Step("Ищем репозиторий {name}")
     public GitSteps searchForRepository(String value) {
         $("[name=q]").val(value).pressEnter();
         return this;
@@ -32,7 +32,7 @@ public class GitSteps {
         return this;
     }
 
-    @Step("Проверяем наличие Issue с номером ${number}")
+    @Step("Проверяем наличие Issue с номером {number}")
     public GitSteps shouldSeeIssueWithNumber(int number) {
         $(byText("#" + number + " opened")).shouldBe(visible);
         return this;

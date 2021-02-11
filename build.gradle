@@ -20,10 +20,6 @@ compileTestJava {
 }
 
 dependencies {
-    testImplementation "com.squareup.retrofit2:retrofit:2.9.0"
-    testImplementation "com.squareup.retrofit2:converter-jackson:2.9.0"
-    testImplementation "com.squareup.okhttp3:logging-interceptor:3.9.0"
-
     testImplementation "com.codeborne:selenide:5.18.0"
     testImplementation "io.qameta.allure:allure-selenide:2.13.6"
 
